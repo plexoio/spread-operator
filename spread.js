@@ -31,4 +31,11 @@ let object3 = { ...object2 };
 console.log('First Object (no spread):', object1);
 console.log('Second Object (spread, update & add):', object2);
 console.log('Third Object (spread, copy):', object3); // a copy of the second
+
+console.log('----------------');
+
 // Copying only part of an array/object
+
+let combineSpread = [...array1, {...object1}, ...array4, 'x', 'y', 'z'];
+
+console.log(combineSpread);
